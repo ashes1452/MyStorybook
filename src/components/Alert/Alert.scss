@@ -1,0 +1,66 @@
+.my-alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 1.5;
+
+    &-content {
+        flex: 1;
+    }
+
+    &-message {
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    &-description {
+        font-size: 13px;
+        opacity: 0.8;
+    }
+
+    &-close {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        opacity: 0.6;
+        padding: 0 4px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    // 成功
+    &-success {
+        background-color: #f6ffed;
+        border-color: green;
+        color: green;
+    }
+
+    // 信息
+    &-info {
+        background-color: #e6f7ff;
+        border-color: blue;
+        color: blue;
+    }
+
+    // 警告
+    &-warning {
+        background-color: #fffbe6;
+        border-color: orange;
+        color: orange;
+    }
+
+    // 错误
+    &-error {
+        background-color: #fff2f0;
+        border-color: red;
+        color: red;
+    }
+}

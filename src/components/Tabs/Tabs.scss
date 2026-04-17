@@ -1,0 +1,41 @@
+.my-tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0 8px;
+    background: #fff;
+}
+
+.my-tab {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.2s;
+    transition: scale 0.2s;
+
+    &:hover:not(.my-tab-disabled):not(.my-tab-active) {
+        color: blue;
+        scale: (1.2);
+    }
+}
+
+.my-tab-active {
+    color: blue;
+    font-weight: 500;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: blue;
+        border-radius: 2px;
+    }
+}
+
+.my-tab-disabled {
+    color: #ccc;
+}

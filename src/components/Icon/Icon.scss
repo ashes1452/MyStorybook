@@ -1,0 +1,11 @@
+.my-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.my-icon-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
