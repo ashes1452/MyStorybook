@@ -12,28 +12,28 @@ type Story = StoryObj<typeof Alert>
 export const 成功提示: Story = {
   args: {
     type: 'success',
-    message: '成功提示',
+    message: '成功!',
   },
 }
 
 export const 信息提示: Story = {
   args: {
     type: 'info',
-    message: '信息提示',
+    message: '您收到了一条新消息',
   },
 }
 
 export const 警告提示: Story = {
   args: {
     type: 'warning',
-    message: '警告提示',
+    message: '警告！',
   },
 }
 
 export const 错误提示: Story = {
   args: {
     type: 'error',
-    message: '错误提示',
+    message: '错误！',
   },
 }
 

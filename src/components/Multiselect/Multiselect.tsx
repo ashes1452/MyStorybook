@@ -1,21 +1,27 @@
 import React, { useState } from "react"
 import "./Multiselect.scss"
+import { background } from "storybook/theming"
 
 export type Option = {
     label: string
     value: string
     disabled?: boolean
+
 }
 
 export interface MultiselectProps {
     options: Option[]
     defaultValue?: string[]
+    bordercolor?: string
+    backgroundColor?: string
     onChange?: (values: string[]) => void
 }
 
 const Multiselect: React.FC<MultiselectProps> = ({
     options,
     defaultValue = [],
+    bordercolor = "#85cff9",
+    backgroundColor = "#b9d9f5",
     onChange,
 }) => {
     const [selected, setSelected] = useState<string[]>(defaultValue)
@@ -32,7 +38,7 @@ const Multiselect: React.FC<MultiselectProps> = ({
     }
 
     return (
-        <div className="my-multiselect">
+        <div className="my-multiselect" style={{ borderColor: bordercolor, backgroundColor: backgroundColor }}>
             {options.map((opt) => (
                 <label key={opt.value} className="my-multi-item">
                     <input

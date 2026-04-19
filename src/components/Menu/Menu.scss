@@ -24,24 +24,23 @@
 
 .my-menu-item {
     padding: 10px 16px;
-    cursor: pointer;
     border-radius: 6px;
     transition: all 0.2s;
     position: relative;
 
     &:hover:not(.my-menu-item-disabled):not(.my-menu-item-selected) {
-        background: #e6f7ff;
+        background: lightblue;
     }
 
 }
 
 .my-menu-item-selected {
-    background: #1890ff;
-    color: #fff;
+    background: blue;
+    color: white;
 }
 
 .my-menu-item-disabled {
-    color: #ccc;
+    color: grey;
 }
 
 .my-sub-menu {
@@ -59,20 +58,19 @@
 
 .my-sub-item {
     padding: 8px 12px;
-    cursor: pointer;
     border-radius: 4px;
 
     &:hover:not(.my-sub-item-disabled):not(.my-sub-item-selected) {
-        background: #e6f7ff;
+        background: lightblue;
     }
 
 }
 
 .my-sub-item-disabled {
-    color: #ccc;
+    color: grey;
 }
 
 .my-sub-item-selected {
-    background: #1890ff;
-    color: #fff;
+    background: blue;
+    color: white;
 }
