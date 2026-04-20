@@ -1,4 +1,4 @@
-import{a as e,n as t}from"./chunk-BneVvdWh.js";import{t as n}from"./iframe-MAmCZlPP.js";import{t as r}from"./jsx-runtime-DXFqSddf.js";var i=t((()=>{})),a,o,s,c=t((()=>{a=e(n(),1),i(),o=r(),s=({mode:e=`horizontal`,items:t,onClick:n})=>{let[r,i]=(0,a.useState)(),[s,c]=(0,a.useState)(null),l=(e,t=!1)=>{e.disabled||(t||!e.children)&&(i(e.key),n?.(e.key))};return(0,o.jsx)(`ul`,{className:`my-menu my-menu-${e}`,children:t.map(e=>(0,o.jsxs)(`li`,{className:`
+import{a as e,n as t}from"./chunk-BneVvdWh.js";import{t as n}from"./iframe-BU_7TELo.js";import{t as r}from"./jsx-runtime-DXFqSddf.js";var i=t((()=>{})),a,o,s,c=t((()=>{a=e(n(),1),i(),o=r(),s=({mode:e=`horizontal`,items:t,onClick:n})=>{let[r,i]=(0,a.useState)(),[s,c]=(0,a.useState)(null),l=(e,t=!1)=>{e.disabled||(t||!e.children)&&(i(e.key),n?.(e.key))};return(0,o.jsx)(`ul`,{className:`my-menu my-menu-${e}`,children:t.map(e=>(0,o.jsxs)(`li`,{className:`
                         my-menu-item
                         ${e.disabled?`my-menu-item-disabled`:``}
                         ${!e.children&&r===e.key?`my-menu-item-selected`:``}
